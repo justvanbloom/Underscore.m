@@ -88,7 +88,7 @@
 - (USStringWrapper *(^)(NSString *))strip
 {
     return ^USStringWrapper *(NSString *strip) {
-        return [USStringWrapper wrap:strip ? [self.string stringByReplacingOccurrencesOfString:strip withString:@""] : nil];
+        return [USStringWrapper wrap:strip ? [self.string stringByReplacingOccurrencesOfString:strip withString:@""] : @""];
     };
 }
 
